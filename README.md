@@ -1,4 +1,4 @@
-# Entertainement-Management-System
+# Entertainment-Management-System
 
 Timeline :: March 3, 2022 - May 1, 2022 
 
