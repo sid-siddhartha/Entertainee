@@ -1,8 +1,6 @@
 # Entertainement-Management-System
 
-On March 3, 2022 this project was started.
-
-On May 1, 2022 this project was ended.
+Timeline :: March 3, 2022 - May 1, 2022 
 
 Website Name: Entertainee
 
