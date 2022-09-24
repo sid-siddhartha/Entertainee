@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %} Profile {% endblock%}
+{% block body %}
+<center>
+<h1>
+    WELCOME {{ session['user'] }}
+</h1>
+    <h2>
+        Your ticket for the musical concert is successfully done.
+        <br>
+        If you wish to cancel your ticket click the below 👇🏻 button...
+        <br>
+    </h2>
+
+<a href="http://127.0.0.1:5000/cancel" class=" btn btn-primary btn-rounded"> Click to Cancel your ticket</a>
+
+<h3>
+            <br>
+        Thank You For Choosing our Website!!
+</h3>
+    </center>
+{% endblock %}

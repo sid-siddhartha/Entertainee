@@ -1,0 +1,160 @@
+{% extends 'base.html' %}
+{% block title %} Book tickets online for music concerts, live shows and professional events. {% endblock%}
+{% block body %}
+
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<style>
+    .container{
+    position: relative;
+    width: 1000px;
+    margin: 150px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 40px;
+}
+.container .card{
+    position: relative;
+    background: black;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 20px 2px rgba(0,0,0,0.2);
+}
+.container .card .img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+.container .card:hover .img-box{
+    opacity: 0.5;
+}
+.container .card .img-box img{
+    width: 100%;
+}
+.container .card .content{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    padding: 20px;
+    padding-top: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+.container .card:hover .content{
+    bottom: 0;
+}
+.container .card:nth-child(1) .content{
+    background: linear-gradient(0deg,orange, transparent);
+}
+.container .card:nth-child(2) .content{
+    background: linear-gradient(0deg,purple, transparent);
+}
+.container .card:nth-child(3) .content{
+    background: linear-gradient(0deg,brown, transparent);
+}
+.container .card .content h2{
+    margin: 0 0 10px;
+    padding: 0;
+    color: white;
+    font-size: 20px;
+}
+.container .card .content h2 span{
+    color: yellow;
+    font-size: 16px;
+
+}
+.container .card .content p{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+
+}
+.container .card .content ul{
+    display:flex ;
+    margin: 20px 0 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+.container .card .content ul li{
+    list-style: none;
+}
+.container .card .content ul li a{
+    color: white;
+    padding: 0 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+</style>
+<center>
+   <h1 style="background-color:gold;color:red">
+       We are at 998 out of 1000.
+  <br>
+       <br>
+    Hurry Up !!! Grab your tickets now.
+       <br>
+       <a href="http://127.0.0.1:5000/booking" class=" btn btn-primary btn-rounded">
+             Buy Tickets Now
+       </a>
+
+   </h1>
+</center>
+
+<body style="margin: 0; padding: 0; font-family: sans-serif;">
+    <div class="container">
+        <div class="card">
+            <div class="img-box">
+                <img src="https://images.pexels.com/photos/7886987/pexels-photo-7886987.jpeg?auto=compress&cs=tinysrgb&w=600">
+            </div>
+            <div class="content">
+                <h2>Jhonny Grey<br><span>Singer, SongWriter</span></h2>
+                <p>Grey was a guitarist, and has later featured on songs by Oasis, Shane MacGowan, Iggy Pop, Vanessa Paradis, Aerosmith, Marilyn Manson, and The New Basement Tapes</p>
+
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://images.pexels.com/photos/243989/pexels-photo-243989.jpeg?auto=compress&cs=tinysrgb&w=400">
+            </div>
+            <div class="content">
+                <h2>Paul Madison<br><span>Guitarist</span></h2>
+                <p>One of the most successful composers and performers of all time, he is known for his melodic approach to bass-playing, versatile and wide tenor vocal range</p>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://images.pexels.com/photos/2614942/pexels-photo-2614942.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500">
+            </div>
+            <div class="content">
+                <h2>Johnson Ray<br><span>Drummer</span></h2>
+                <p>Regarded as one of the greatest singers in the history of rock music, he was known for his flamboyant stage persona and four-octave vocal range.</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+{% endblock %}

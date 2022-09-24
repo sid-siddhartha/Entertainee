@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block title %} Entertainee {% endblock%}
+{% block body %}
+
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="https://www.w3schools.com/howto/img_band_chicago.jpg"
+  style="width:100%">
+  <img class="mySlides" src="https://www.w3schools.com/howto/img_band_ny.jpg"
+  style="width:100%">
+  <img class="mySlides" src="https://www.w3schools.com/howto/img_band_la.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">THE BAND</h2>
+  <p class="w3-opacity"><i>We love music</i></p>
+  <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>Johnny Grey</p>
+    <img src="https://images.pexels.com/photos/7886987/pexels-photo-7886987.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Random Name" style="width:100%">
+
+  </article>
+  <article class="w3-third">
+    <p>Paul Madison</p>
+    <img src="https://images.pexels.com/photos/243989/pexels-photo-243989.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Random Name" style="width:100%">
+
+  </article>
+  <article class="w3-third">
+    <p>Johnson Ray</p>
+    <img src="https://images.pexels.com/photos/2614942/pexels-photo-2614942.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500" alt="Random Name" style="width:100%">
+  </article>
+</section>
+
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
+<br/><br/>
+
+
+{% endblock %}
